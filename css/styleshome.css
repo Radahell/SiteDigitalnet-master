@@ -1,0 +1,143 @@
+* {
+    font-family: "Lato", sans-serif ;
+}
+
+.bg-primary-color {
+    background-color: #065ea7;
+}
+
+.bg-secondary-color {
+    background-color: #ece8ea;
+}
+
+.bg-dark-color {
+    background-color: #065ea7;
+}
+
+.primary-color {
+    color:  #fff;
+}
+
+.secondary-color{
+   color: #aaa3a3; 
+}
+
+
+
+
+
+
+/*navbar */
+
+#navbar {
+    border-bottom: 1px solid #7a7a7a;
+    box-shadow: #000 1px 1px
+}
+
+#navbar i {
+    font-size: 30px;
+    padding-left: 10em;
+    cursor: pointer;
+}
+
+#navbar i:hover {
+    color: #7a7a7a;
+}
+
+#navbar a:hover{
+    color: #7a7a7a;
+}
+
+#navbar a.active {
+    border-bottom: 1px solid #050505;
+    text-shadow: #000 1px 1px
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand img{
+    width: 50px;
+    border-radius: 8px;
+    box-shadow: #000 2px 2px 2px 1px ;
+}
+
+.navbar-brand span{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-left: 0.7em;
+    text-shadow: #000 2px 2px 2px;
+}
+
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    margin-left: 1.5em;
+    margin: 0 1em;
+}
+
+#navbar-items .nav-item{
+    margin: 0 1em;
+}
+
+
+/* footer */
+
+#footer {
+    padding: 3em 2em;
+}
+
+#footer-top {
+    margin-bottom: 2em;
+}
+
+#po{
+   cursor: pointer;
+}
+
+#po:hover{
+    color: #7a7a7a;
+ }
+ 
+
+
+@media(min-width: 768px) {
+    #news-container {
+        padding-right: 2em;
+    }
+    #links-container {
+        padding-left: 2em;
+    }
+    #contact-container{
+        padding: 0 2em;
+        border-left: 1px solid #7a7a7a;
+        border-right: 1px solid #7a7a7a;
+    }
+}
+
+#lo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+#login { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #fff;
+}
+
+
+/* materiais */
+

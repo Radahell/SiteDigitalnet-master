@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- css projeto-->
+    <link rel="stylesheet" href="css/styleshome.css" />
+    <title>Apoio</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-2">
+            <a href="index.html" class="navbar-brand primary-color">
+                
+                <span >DIGITALNET</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link   primary-color" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="agendar.html" class="nav-link  active primary-color" aria-current="page">Agendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tecnicos.html" class="nav-link  active primary-color" aria-current="page">Técnicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="regiao.html" class="nav-link  active primary-color" aria-current="page">Região</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  primary-color" aria-current="page">Clima</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  primary-color" aria-current="page">Mapa por Região</a>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <style>
+                  body{
+                    background-color: #ebdc13;
+                }
+                #featured-container{
+                    margin-bottom: 4em;
+                    justify-content: center;
+                    
+                    
+                }
+                .title {
+                    font-size: 1.75em;
+                    margin-bottom: 0.4em;
+                    position: relative;
+                }
+                .title:before{
+                    width: 75px;
+                    border-top: 4px solid #ebdc13;
+                    content: "";
+                    position: absolute;
+                    bottom: 2em;
+                }
+                #featured-images .col-md-4{
+                    position: relative;
+                    cursor: pointer;
+                }
+                #featured-images .col-md-4:hover > .banner-content{
+                    opacity: 0.8;
+                }
+                #featured-images .banner-content{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 88%;
+                    width: 100%;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    opacity: 0.6;
+                    transition: 0.5s;
+                }
+            
+                @media(min-width: 768px){
+                    .title {
+                        font-size: 2.4em;
+                    }
+                    .title:before{
+                        bottom: 1.5em;
+                    }
+                    #featured-images .banner-content {
+                        opacity: 0;
+                    }
+                }
+     </style>
+    <!-- MEIO -->
+    <div class="container" id="featured-container">
+                <div class="col-12">
+                    <h2 class="title">APOIO</h2>
+                    <p >
+                      Sistema de informações
+                    </p>
+                   
+                </div>
+      <img src="img/logo.jpg">
+      
+      
+
+       
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- footer-->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class=" primary-color">DigitalNet &copy; 2023</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a  class=" primary-color" id="po">Apoio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>            
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- css projeto-->
+    <link rel="stylesheet" href="css/styleshome.css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    
+    <title>Apoio</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-2">
+            <a href="index.html" class="navbar-brand primary-color">
+                
+                <span >DIGITALNET</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link   primary-color" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="agendar.html" class="nav-link  active primary-color" aria-current="page">Agendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tecnicos.html" class="nav-link  active primary-color" aria-current="page">Técnicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="regiao.html" class="nav-link  active primary-color" aria-current="page">Região</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  primary-color" aria-current="page">Clima</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  primary-color" aria-current="page">Mapa por Região</a>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <style>     
+                body{
+                    background-color: #ebdc13;
+                }
+                #featured-container{
+                    margin-bottom: 4em;
+                    justify-content: center;
+                    
+                    
+                }
+                .title {
+                    font-size: 1.75em;
+                    margin-bottom: 0.4em;
+                    position: relative;
+                }
+                .title:before{
+                    width: 75px;
+                    border-top: 4px solid #ebdc13;
+                    content: "";
+                    position: absolute;
+                    bottom: 2em;
+                }
+                #featured-images .col-md-4{
+                    position: relative;
+                    cursor: pointer;
+                }
+                #featured-images .col-md-4:hover > .banner-content{
+                    opacity: 0.8;
+                }
+                #featured-images .banner-content{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 88%;
+                    width: 100%;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    opacity: 0.6;
+                    transition: 0.5s;
+                }
+            
+                @media(min-width: 768px){
+                    .title {
+                        font-size: 2.4em;
+                    }
+                    .title:before{
+                        bottom: 1.5em;
+                    }
+                    #featured-images .banner-content {
+                        opacity: 0;
+                    }
+                }
+                /* GERAL */
+
+                button {
+                    background-color: #fdfdfd;
+                    color: #102f5e;
+                    border: 2px solid #102f5e;
+                    padding: .3rem .6rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.4s;
+                }
+
+                button:hover {
+                    background-color: #102f5e;
+                    color: #fff;
+                }
+
+                button:hover > i {
+                    color: #fff;
+                }
+
+                button i {
+                    color: #102f5e;
+                    font-weight: bold;
+                    pointer-events: none;
+                }
+
+                input,select {
+                    padding: 0.25rem 0.5rem;
+                }
+                .hide{
+                    display: none;
+                }
+
+                /* todo geader */
+
+                .todo-container {
+                    max-width: 500px;
+                    display: inline-table;
+                    background-color: #fff;
+                    padding: 1.5rem;
+                    border-radius: 15px;
+                    width: 450px;
+                }
+
+                .todo-container header {
+                    text-align: center;
+                    padding: 0 1rem 1rem;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                /* todo geader */
+                
+                #todo-form, #edit-form {
+                    padding: 1rem;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                #todo-form p,
+                #edit-form p {
+                    margin-bottom: 0.5rem;
+                    font-weight: bold;
+                }
+
+                .form-control {
+                    display: flex;
+                }
+                
+                .form-control input {
+                    margin-right:  .3rem;
+                }
+
+                #cancel-edit-btn {
+                    margin-top: 1rem;
+                }
+
+                 /* todo geader */
+
+                 #toolbar {
+                    padding: 1rem;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                 }
+
+                 #toolbar h4 {
+                    margin-bottom: .5rem;
+                 }
+
+                 #search {
+                    border-right: 1px solid #ddd;
+                    padding-right: 1rem;
+                    margin-right: 1rem;
+                    width: 65%;
+                    display: flex;
+                    flex-direction: column;
+                 }
+
+                 #search form {
+                    display: flex;
+                 }
+
+                 #search input {
+                    width: 100%;
+                    margin-right: 0.3rem;
+                 }
+
+                 #filter {
+                    width: 35%;
+                    display: flex;
+                    flex-direction: column;
+                 }
+
+                 #filter select{
+                    flex: 1;
+                 }
+
+                 /* todo list */
+
+                 .todo {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 1rem;
+                    border-bottom: 1px solid #ddd;
+                    transition: .3s;
+                 }
+
+                 .todo h3 {
+                    flex: 1;
+                    font-size: 0.9rem;
+                 }
+
+                 .todo button {
+                    margin-left: 0.4rem;
+                 }
+
+                 .Number {
+                    width: 15%;
+                    margin-right: 0.3rem;
+                }
+
+                .done {
+                    background-color: #395169;
+                }
+
+                .done h3 {
+                    color: #fff;
+                    text-decoration: line-through;
+                    font-style: italic;
+                }
+
+     </style>
+    <!-- MEIO -->
+    <div class="container" id="featured-container">
+        <script></script>
+                <div class="col-12">
+                    <h2 class="title">TÉCNIOS</h2>
+                    <p >
+                      informações da região dos tecnicos e quantidade de serviços.
+                    </p>
+                   
+                </div>
+
+
+                <div class="todo-container">
+                    <header>
+                        <h3>BASE</h3>
+                    </header>
+                    <form id="todo-form">
+                        <p>Adicione o Técnicos desejado</p>
+                        <div class="form-control">
+                            <input type="text" id="todo-input" placeholder=" O que voce vai fazer?">
+                            <button type="submit">
+                                <i class="fa-thin fa-plus"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <form id="edit-form" class="hide">
+                        <p>Edite o tecnico</p>
+                        <div class="form-control">
+                            <input type="text" id="edit-input">
+                            <button type="submit">
+                                <i class="fa-solid fa-check-double"></i>
+                            </button>
+                        </div>
+                        <button id="cancel-edit-btn">Cancelar</button>
+                    </form>
+                    
+                    <div id="toolbar">
+                        <div id="search">
+                            <h4>Pesquisar:</h4>
+                            <form>
+                                <input type="text" id="search-input" placeholder="Buscar">
+                                <button id="erase-button">
+                                    <i class="fa-solid fa-delete-left"></i>
+                                </button>
+                            </form>
+                        </div>
+                          
+                        <div id="filter">
+                            <h4>Filtrar:</h4>
+                            <select id="my-dropdown-menu"></select>
+                            <script>
+                                // Define URL of server script that retrieves data from SQL database
+                                const serverUrl = 'D:\\SiteDigitalnet-master\\server-script.php';
+                                
+                                // Fetch data from server script using AJAX
+                                const xhr = new XMLHttpRequest();
+                                xhr.open('GET', serverUrl);
+                                xhr.onload = function() {
+                                  // Parse response data as JSON
+                                  const data = JSON.parse(xhr.responseText);
+                                
+                                  // Loop through data and add options to dropdown menu
+                                  const dropdown = document.getElementById('my-dropdown-menu');
+                                  for (let i = 0; i < data.length; i++) {
+                                    const option = document.createElement('option');
+                                    option.text = data[i].name;
+                                    dropdown.appendChild(option);
+                                  }
+                                };
+                                xhr.send();
+                                </script>
+
+                                
+                        </div>
+                    </div>
+                    
+                    <div id="todo-list">
+                        
+                    </div> 
+                    
+                </div> 
+
+                
+                <div class="todo-container" >
+         
+                    <header>
+                        <h3>LOS ANGELES</h3>
+                    </header>
+                    <form id="todo-form">
+                        <p>Adicione o Técnicos desejado</p>
+                        <div class="form-control">
+                            <input type="text" id="todo-input" placeholder=" O que voce vai fazer?">
+                            <button type="submit">
+                                <i class="fa-thin fa-plus"></i>     
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <form id="edit-form" class="hide">
+                        <p>Edite o tecnico</p>
+                        <div class="form-control">
+                            <input type="text" id="edit-input">
+                            <button type="submit">
+                                <i class="fa-solid fa-check-double"></i>
+                            </button>
+                        </div>
+                        <button id="cancel-edit-btn">Cancelar</button>
+                    </form>
+                    
+                    <div id="toolbar">
+                        <div id="search">
+                            <h4>Pesquisar:</h4>
+                            <form>
+                                <input type="text" id="search-input" placeholder="Buscar">
+                                <button id="erase-button">
+                                    <i class="fa-solid fa-delete-left"></i>
+                                </button>
+                            </form>
+                        </div>
+                          
+                        <div id="filter">
+                            <h4>Filtrar:</h4>
+                            <select id="filter-select">
+                                <option value="all">Todos</option>
+                                <option value="done">Falto</option>
+                                <option value="todo">Serviço</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="todo-list">
+                      
+                    </div> 
+                    
+                </div> 
+                <BR>
+                <BR>
+                <div class="todo-container" >
+         
+                    <header>
+                        <h3>LEBLON</h3>
+                    </header>
+                    <form id="todo-form">
+                        <p>Adicione o Técnicos desejado</p>
+                        <div class="form-control">
+                            <input type="text" id="todo-input" placeholder=" O que voce vai fazer?">
+                            <button type="submit">
+                                <i class="fa-thin fa-plus"></i>     
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <form id="edit-form" class="hide">
+                        <p>Edite o tecnico</p>
+                        <div class="form-control">
+                            <input type="text" id="edit-input">
+                            <button type="submit">
+                                <i class="fa-solid fa-check-double"></i>
+                            </button>
+                        </div>
+                        <button id="cancel-edit-btn">Cancelar</button>
+                    </form>
+                    
+                    <div id="toolbar">
+                        <div id="search">
+                            <h4>Pesquisar:</h4>
+                            <form>
+                                <input type="text" id="search-input" placeholder="Buscar">
+                                <button id="erase-button">
+                                    <i class="fa-solid fa-delete-left"></i>
+                                </button>
+                            </form>
+                        </div>
+                          
+                        <div id="filter">
+                            <h4>Filtrar:</h4>
+                            <select id="filter-select">
+                                <option value="all">Todos</option>
+                                <option value="done">Falto</option>
+                                <option value="todo">Serviço</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="todo-list">
+                    
+                    </div> 
+                    
+                </div> 
+
+
+                <div class="todo-container" >
+         
+                    <header>
+                        <h3>CHÁCARA</h3>
+                    </header>
+                    <form id="todo-form">
+                        <p>Adicione o Técnicos desejado</p>
+                        <div class="form-control">
+                            <input type="text" id="todo-input" placeholder=" O que voce vai fazer?">
+                            <button type="submit">
+                                <i class="fa-thin fa-plus"></i>     
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <form id="edit-form" class="hide">
+                        <p>Edite o tecnico</p>
+                        <div class="form-control">
+                            <input type="text" id="edit-input">
+                            <button type="submit">
+                                <i class="fa-solid fa-check-double"></i>
+                            </button>
+                        </div>
+                        <button id="cancel-edit-btn">Cancelar</button>
+                    </form>
+                    
+                    <div id="toolbar">
+                        <div id="search">
+                            <h4>Pesquisar:</h4>
+                            <form>
+                                <input type="text" id="search-input" placeholder="Buscar">
+                                <button id="erase-button">
+                                    <i class="fa-solid fa-delete-left"></i>
+                                </button>
+                            </form>
+                        </div>
+                          
+                        <div id="filter">
+                            <h4>Filtrar:</h4>
+                            <select id="filter-select">
+                                <option value="all">Todos</option>
+                                <option value="done">Falto</option>
+                                <option value="todo">Serviço</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="todo-list">
+                        
+                    </div> 
+                    
+                </div> 
+                
+                
+
+                
+      
+      
+
+       
+    </div>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!-- footer-->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="primary-color">DigitalNet &copy; 2023</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a   id="po " class="primary-color">Apoio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>            
+</body>
+</html>
